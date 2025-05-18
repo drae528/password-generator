@@ -30,7 +30,7 @@ Can generate with
 
 ## Installation
 
-    git clone
+    git clone https://github.com/drae528/password-generator.git
     cd password-generator
     npm install
 
