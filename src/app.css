@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-mb: var(--color-neutral-900);
+	--color-sb: var(--color-neutral-800);
+	--color-mt: var(--color-neutral-100);
+	--color-st: var(--color-neutral-500);
+	--color-ma: var(--color-green-300);
+}
+
+@layer utilities {
+	.scrollbar-none::-webkit-scrollbar {
+		display: none;
+	}
+	.scrollbar-none {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
+
+body {
+	@apply bg-mb text-mt selection:bg-ma selection:text-mb flex flex-col flex-wrap items-center gap-4 px-4 py-14 font-mono font-semibold;
+}
